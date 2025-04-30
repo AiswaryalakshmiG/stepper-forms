@@ -39,4 +39,71 @@
   <button mat-button matStepperNext>Next</button>
 </form>
   </mat-step>
-</mat-stepper>
+  <mat-step>
+    <!-- <form [formGroup]="gender"> -->
+      <mat-checkbox>click me</mat-checkbox>
+    <!-- </form> -->
+  </mat-step>
+
+  <mat-step>
+    <form [formGroup]="skills">   
+       <ng-template matStepLabel >Skills</ng-template>
+    <h3>Add Your Skills</h3>
+    <mat-checkbox>Java</mat-checkbox>
+    <br>
+    <mat-checkbox>Angular</mat-checkbox>
+    <br>
+    <mat-checkbox>HTML</mat-checkbox>
+    <br>
+    <mat-checkbox>CSS</mat-checkbox>
+    <br>
+    <mat-checkbox>Js</mat-checkbox>
+    <br>
+    <mat-checkbox>Git</mat-checkbox>
+    <br>
+    <mat-checkbox>MYSQL</mat-checkbox>
+    <br>
+    <mat-checkbox>POSTGRESQL</mat-checkbox>
+    <br>
+    <mat-checkbox>Spring</mat-checkbox>
+    <br>
+   <button mat-button matStepperPrevious>Back</button>
+    <br>
+    <button mat-button matStepperNext>Next</button>
+  </form>
+  </mat-step>
+
+  <h2>Add your project details</h2>
+    <form [formGroup]="project"></form>
+    <ng-template matStepLabel>Project</ng-template>
+    <mat-form-field>
+      <mat-label>Project Title</mat-label>
+      <input matInput formControlName="projectTitle" required>
+    </mat-form-field>
+    <br>
+    <mat-step>
+      <h2>Add your project details</h2>
+      <form [formGroup]="project"></form>
+      <ng-template matStepLabel>Project</ng-template>
+      <mat-form-field>
+        <mat-label>Project Title</mat-label>
+        <input matInput formControlName="projectTitle" required>
+      </mat-form-field>
+      <br>
+    
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input matInput formControlName="projectDescription">
+    </mat-form-field>
+    <br>
+    <!-- <mat-form-field>
+      <mat-label>Technologies Used</mat-label>
+      <input matInput formControlName="technologiesUsed">
+    </mat-form-field> -->
+    <br>
+    <button mat-button matStepperPrevious>Back</button>
+    <br>
+    <button mat-button matStepperNext>Next</button>
+
+  </mat-step> 
+</mat-stepper> 

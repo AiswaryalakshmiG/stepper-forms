@@ -13,6 +13,19 @@ export class AppComponent {
 
  private fb= new  FormBuilder;
 
+
+
+//  task = signal<Task>({
+//   name: 'Parent task',
+//   completed: false,
+//   subtasks: [
+//     {name: 'Child task 1', completed: false},
+//     {name: 'Child task 2', completed: false},
+//     {name: 'Child task 3', completed: false},
+//   ],
+// });
+
+
   personalForm = this.fb.group({
       firstname: ['', Validators.required],
       lastname:['',Validators.required],
@@ -25,4 +38,13 @@ export class AppComponent {
       username:['', Validators.required],
       password:['', Validators.required]
     });
+
+    skills= this.fb.group({
+
+    });
+
+    
+    project= this.fb.group({
+      
+    })
   }
